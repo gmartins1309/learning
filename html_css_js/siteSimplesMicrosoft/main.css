@@ -1,0 +1,67 @@
+:root{
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/*  O seletor * é universal e se aplica a todos os elementos da página (exceto quando um seletor de elemento mais específico o substitui). */
+*{
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+    font-family: monospace;
+    
+    }
+    
+ul {
+
+font-family: helvética;
+
+}
+
+li {
+
+    list-style: circle;
+    
+    }
+    
+.list {
+
+list-style: square;
+
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+    
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn{
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    cursor: pointer;
+}
+.btn:focus{
+    outline-style: none;
+}
